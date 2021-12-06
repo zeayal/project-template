@@ -1,13 +1,13 @@
 {
-    "compilerOptions": {
-        "jsx": "react-jsx",
-        "module": "commonjs",
-        "noImplicitAny": true,
-        "target": "ES5",
-        "esModuleInterop": true,
-        "baseUrl": ".",
-        "paths": {"@/*": ["src/*"]}
-    },
-    "include": ["src"],
-    "exclude": ["node_modules"]
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "target": "ES5",
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": { "@/*": ["src/*"] }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }

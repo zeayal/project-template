@@ -1,6 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./views/home";
-import "./app.less";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from '@/views/home';
+import './app.less';
 
 const App = () => {
   return (
