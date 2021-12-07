@@ -1,5 +1,7 @@
 import { FC } from 'react';
 import RequestDemo from './component/RequestDemo';
+import DebounceDemo from './component/DebounceDemo';
+import UseMountDemo from './component/UseMountDemo';
 
 const Index: FC = () => {
   return (
@@ -7,6 +9,9 @@ const Index: FC = () => {
       首页代码
       <div>
         <RequestDemo />
+        <DebounceDemo />
+        <hr />
+        <UseMountDemo />
       </div>
     </div>
   );
