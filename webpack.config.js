@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const WindCSSWebpackPlugin = require('windicss-webpack-plugin');
 const publicPath = '/';
 
 module.exports = {
@@ -19,16 +19,9 @@ module.exports = {
         test: /\.(ts|js)x?$/,
         include: [path.resolve(__dirname, 'src')],
         loader: 'babel-loader',
-        options: {
-          presets: [
-            '@babel/preset-typescript',
-            ['@babel/preset-react', { runtime: 'automatic' }], // @see  https://stackoverflow.com/questions/32070303/uncaught-referenceerror-react-is-not-defined
-            '@babel/preset-env',
-          ],
-        },
       },
       {
-        test: /\.less$/,
+        test: /\.(less|css)$/,
         use: [
           {
             loader: 'style-loader',
@@ -63,5 +56,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './public/index.html'),
     }),
+    new WindCSSWebpackPlugin(),
   ],
 };

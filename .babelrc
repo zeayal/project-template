@@ -1,4 +1,9 @@
 {
+  "presets": [
+    "@babel/preset-typescript",
+    ["@babel/preset-react", { "runtime": "automatic" }], // @see  https://stackoverflow.com/questions/32070303/uncaught-referenceerror-react-is-not-defined
+    "@babel/preset-env"
+  ],
   "plugins": [
     [
       "import",
